@@ -1,0 +1,179 @@
+{
+  "identity": {
+    "name": "Vana Weaves",
+    "tone": "Authentic, Elegant, Trustworthy, Simple",
+    "aesthetic": "Modern Heritage - Blending traditional Indian craftsmanship with clean, minimalist digital design.",
+    "target_audience": "Local Indian customers (Buying) & Non-technical Shop Owner (Managing)",
+    "theme_mode": "light"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Playfair Display, serif",
+      "body": "Outfit, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-2xl font-medium",
+      "body": "text-base md:text-lg leading-relaxed",
+      "caption": "text-sm text-muted-foreground tracking-wide uppercase"
+    },
+    "usage": {
+      "hero_text": "Playfair Display, Italic for emphasis",
+      "price": "Outfit, font-medium",
+      "nav_links": "Outfit, uppercase, tracking-widest text-xs"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Deep Indigo",
+        "hex": "#1e1b4b",
+        "tailwind": "bg-indigo-950 text-white"
+      },
+      "secondary": {
+        "name": "Terracotta",
+        "hex": "#ea580c",
+        "tailwind": "bg-orange-600 text-white hover:bg-orange-700"
+      },
+      "background": {
+        "main": "bg-stone-50",
+        "card": "bg-white",
+        "subtle": "bg-stone-100"
+      },
+      "text": {
+        "main": "text-stone-900",
+        "muted": "text-stone-500",
+        "inverted": "text-stone-50"
+      },
+      "admin": {
+        "bg": "bg-slate-50",
+        "sidebar": "bg-white border-r",
+        "active_item": "bg-indigo-50 text-indigo-700"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "bg-gradient-to-t from-stone-900/80 via-stone-900/20 to-transparent",
+      "subtle_glow": "bg-gradient-to-br from-orange-100/50 to-indigo-100/50"
+    }
+  },
+  "layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_gap": "py-16 md:py-24",
+      "element_gap": "gap-6 md:gap-8"
+    },
+    "grid_systems": {
+      "bento_hero": "grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[600px]",
+      "product_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8",
+      "admin_dashboard": "grid grid-cols-1 md:grid-cols-3 gap-6"
+    },
+    "border_radius": {
+      "card": "rounded-xl",
+      "button": "rounded-full",
+      "input": "rounded-lg"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-orange-600 text-white hover:bg-orange-700 rounded-full px-8 py-3 font-medium transition-all shadow-lg hover:shadow-orange-600/20",
+      "secondary": "bg-white text-stone-900 border border-stone-200 hover:bg-stone-50 rounded-full px-6 py-2 font-medium",
+      "ghost": "text-stone-600 hover:text-orange-600 hover:bg-orange-50 rounded-lg px-4 py-2"
+    },
+    "cards": {
+      "product": "group relative bg-white rounded-xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-md transition-all duration-300",
+      "admin_stat": "bg-white p-6 rounded-xl border border-slate-100 shadow-sm flex flex-col justify-between h-full"
+    },
+    "inputs": {
+      "default": "bg-white border-stone-200 focus:border-orange-500 focus:ring-orange-500/20 rounded-lg h-12 px-4"
+    },
+    "navigation": {
+      "header": "sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-100",
+      "admin_sidebar": "fixed left-0 top-0 h-full w-64 bg-white border-r border-slate-200 p-6 hidden md:block"
+    }
+  },
+  "admin_dashboard": {
+    "philosophy": "Simplicity First. Avoid technical jargon. Use 'My Stock' instead of 'Inventory', 'Shop Performance' instead of 'Analytics'.",
+    "visuals": {
+      "status_indicators": {
+        "good": "bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium",
+        "warning": "bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm font-medium",
+        "critical": "bg-rose-100 text-rose-700 px-3 py-1 rounded-full text-sm font-medium"
+      },
+      "actions": {
+        "primary": "w-full bg-indigo-600 hover:bg-indigo-700 text-white h-12 text-lg font-medium rounded-lg shadow-sm"
+      }
+    }
+  },
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1742287724816-4a8a1cc7ad5c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBoYW5kbG9vbSUyMHNhcmVlJTIwZmFzaGlvbiUyMG1vZGVsfGVufDB8fHx8MTc3MTIxOTcxNXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Elegant woman in pink and black saree",
+        "category": "hero_main"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1742287721821-ddf522b3f37b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBoYW5kbG9vbSUyMHNhcmVlJTIwZmFzaGlvbiUyMG1vZGVsfGVufDB8fHx8MTc3MTIxOTcxNXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Woman in patterned saree",
+        "category": "hero_secondary"
+      }
+    ],
+    "products": [
+      {
+        "url": "https://images.unsplash.com/photo-1654764745582-69893ee8a985?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBoYW5kbG9vbSUyMHNhcmVlJTIwZmFzaGlvbiUyMG1vZGVsfGVufDB8fHx8MTc3MTIxOTcxNXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Colorful dress leaning against wall",
+        "category": "product_saree"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1737514996816-a034a795febe?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBoYW5kbG9vbSUyMHNhcmVlJTIwZmFzaGlvbiUyMG1vZGVsfGVufDB8fHx8MTc3MTIxOTcxNXww&ixlib=rb-4.1.0&q=85",
+        "alt": "Red and white bridal gown",
+        "category": "product_bridal"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762173886363-de541417e48e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBoYW5kaWNyYWZ0cyUyMGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3NzEyMTk3MjB8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Hand-painted decorative lamps",
+        "category": "product_decor"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1759607236409-1df137ecb3b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHw0fHxpbmRpYW4lMjBoYW5kaWNyYWZ0cyUyMGhvbWUlMjBkZWNvcnxlbnwwfHx8fDE3NzEyMTk3MjB8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Colorful handcrafted lamps",
+        "category": "product_decor"
+      }
+    ],
+    "textures": [
+      {
+        "url": "https://images.unsplash.com/photo-1595972499967-4779c68725e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHwzfHxoYW5kbG9vbSUyMGZhYnJpYyUyMHRleHR1cmUlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MTIxOTczN3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "White and black knit textile texture",
+        "category": "background_texture"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1612863234179-7e51d74c28a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzV8MHwxfHNlYXJjaHw0fHxoYW5kbG9vbSUyMGZhYnJpYyUyMHRleHR1cmUlMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MTIxOTczN3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Red textile close up",
+        "category": "accent_texture"
+      }
+    ],
+    "people": [
+      {
+        "url": "https://images.unsplash.com/photo-1664101606938-e664f5852fac?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDN8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGluZGlhbiUyMHNob3BrZWVwZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzEyMTk3MzN8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Happy Indian shopkeeper with white beard",
+        "category": "shop_owner"
+      }
+    ]
+  },
+  "universal_guidelines": {
+    "general": [
+      "Do not use generic 'Lorem Ipsum'. Use realistic Indian names (e.g., 'Kanjeevaram Silk', 'Banarasi Georgette') and prices (e.g., '₹4,500').",
+      "Ensure all interactive elements have hover states.",
+      "Use 'sonner' for all toast notifications.",
+      "All buttons must have a 'data-testid' attribute.",
+      "Do not use gradients for text or backgrounds unless specified in the 'colors' section.",
+      "Maintain a 'Light Mode' aesthetic for the customer-facing site to showcase product colors accurately."
+    ],
+    "accessibility": [
+      "Ensure text contrast ratios meet WCAG AA standards.",
+      "All images must have descriptive alt text.",
+      "Focus states must be clearly visible."
+    ]
+  }
+}
