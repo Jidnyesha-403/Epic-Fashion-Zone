@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
 import { ChevronRight } from "lucide-react";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
 const API = `${BACKEND_URL}/api`;
 
 export const Home = () => {

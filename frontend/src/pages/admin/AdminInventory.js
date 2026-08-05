@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Search, Plus, Minus, Check, RefreshCw } from "lucide-react";
 import { toast } from "sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
 const API = `${BACKEND_URL}/api`;
 
 export const AdminInventory = () => {

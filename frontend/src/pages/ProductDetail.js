@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Heart, ShoppingCart, Check } from "lucide-react";
 import { toast } from "sonner";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
 const API = `${BACKEND_URL}/api`;
 
 export const ProductDetail = () => {
