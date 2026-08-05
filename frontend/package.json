@@ -62,7 +62,7 @@
     "test": "craco test"
   },
   "engines": {
-    "node": ">=18.0.0 <19.0.0"
+    "node": "22.x"
   },
   "browserslist": {
     "production": [
@@ -89,5 +89,9 @@
     "globals": "15.15.0",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
+  },
+  "overrides": {
+    "ajv": "^8.0.0",
+    "ajv-keywords": "^5.0.0"
   }
 }
