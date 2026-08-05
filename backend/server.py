@@ -20,8 +20,12 @@ import time
 import razorpay
 
 ROOT_DIR = Path(__file__).parent
-UPLOAD_DIR = ROOT_DIR / "uploads"
-UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+# Use /tmp for uploads in serverless environments (Vercel has read-only filesystem)
+UPLOAD_DIR = Path("/tmp/uploads") if os.environ.get("VERCEL") else ROOT_DIR / "uploads"
+try:
+    UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+except OSError:
+    pass
 load_dotenv(ROOT_DIR / '.env')
 
 # Configure Cloudinary
