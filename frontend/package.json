@@ -59,7 +59,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "postinstall": "node -e \"try{require('fs').rmSync('./node_modules/fork-ts-checker-webpack-plugin/node_modules',{recursive:true,force:true})}catch(e){console.log('patch skipped:',e.message)}\""
   },
   "engines": {
     "node": "22.x"
