@@ -24,7 +24,7 @@ async def seed_admin():
             {"email": "admin@vanaweaves.com"},
             {"$set": {"email": "shital77ahirrao@gmail.com"}}
         )
-        print("✓ Admin email updated to: shital77ahirrao@gmail.com")
+        print("Success: Admin email updated to: shital77ahirrao@gmail.com")
     else:
         # Check if new admin exists
         existing = await db.admins.find_one({"email": "shital77ahirrao@gmail.com"})
@@ -36,15 +36,15 @@ async def seed_admin():
                 "created_at": "2024-01-01T00:00:00"
             }
             await db.admins.insert_one(admin)
-            print("✓ Admin user created: shital77ahirrao@gmail.com / admin123")
+            print("Success: Admin user created: shital77ahirrao@gmail.com / admin123")
         else:
-            print("✓ Admin user already exists")
+            print("Info: Admin user already exists")
 
 async def seed_products():
     """Create sample products"""
     existing_count = await db.products.count_documents({})
     if existing_count > 0:
-        print(f"✓ {existing_count} products already exist")
+        print(f"Info: {existing_count} products already exist")
         return
 
     products = [
@@ -203,13 +203,13 @@ async def seed_products():
     ]
 
     await db.products.insert_many(products)
-    print(f"✓ {len(products)} sample products created")
+    print(f"Success: {len(products)} sample products created")
 
 async def main():
-    print("\n🌱 Seeding database...\n")
+    print("\n[Seeding database...]\n")
     await seed_admin()
     await seed_products()
-    print("\n✅ Database seeding completed!\n")
+    print("\n[Database seeding completed!]\n")
     client.close()
 
 if __name__ == "__main__":
