@@ -33,8 +33,10 @@ export const Home = () => {
         axios.get(`${API}/products?featured=true`),
         axios.get(`${API}/products?new_arrival=true`)
       ]);
-      setFeaturedProducts(featuredRes.data.slice(0, 4));
-      setNewArrivals(newRes.data.slice(0, 4));
+      const featured = Array.isArray(featuredRes.data) ? featuredRes.data : [];
+      const arrivals = Array.isArray(newRes.data) ? newRes.data : [];
+      setFeaturedProducts(featured.slice(0, 4));
+      setNewArrivals(arrivals.slice(0, 4));
     } catch (error) {
       console.error('Error fetching products:', error);
     }

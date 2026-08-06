@@ -56,7 +56,8 @@ export const AdminProducts = () => {
   const fetchProducts = async () => {
     try {
       const response = await axios.get(`${API}/products`);
-      setProducts(response.data);
+      const data = Array.isArray(response.data) ? response.data : [];
+      setProducts(data);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching products:', error);

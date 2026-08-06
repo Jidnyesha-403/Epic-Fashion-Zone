@@ -30,7 +30,8 @@ export const AdminOrders = () => {
       const response = await axios.get(`${API}/orders`, {
         headers: { Authorization: `Bearer ${token}` }
       });
-      setOrders(response.data);
+      const data = Array.isArray(response.data) ? response.data : [];
+      setOrders(data);
       setLoading(false);
     } catch (error) {
       console.error('Error fetching orders:', error);
